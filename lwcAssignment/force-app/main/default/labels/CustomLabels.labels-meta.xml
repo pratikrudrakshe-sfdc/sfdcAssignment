@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Active_Order_Status</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Active Order Status</shortDescription>
+        <value>Activated</value>
+    </labels>
+    <labels>
+        <fullName>Add_OLI_Error_Message_for_Active_Order</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add OLI Error Message for Active Order</shortDescription>
+        <value>Sorry, you cannot add Order Line Items under an Active Order.</value>
+    </labels>
+    <labels>
+        <fullName>Order_Confirmation_Error_Message_for_Active_Order</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Order Confirmation Error Message for Active Order</shortDescription>
+        <value>Sorry, you cannot reconfirm an Active Order.</value>
+    </labels>
+    <labels>
+        <fullName>Order_Endpoint</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Order Endpoint</shortDescription>
+        <value>https://assignment.requestcatcher.com/test</value>
+    </labels>
+    <labels>
+        <fullName>Order_Success_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Order Success Message</shortDescription>
+        <value>Order Activated Successfully.</value>
+    </labels>
+    <labels>
+        <fullName>Product_List_Empty_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product List Empty Error Message</shortDescription>
+        <value>Please add products to the Order</value>
+    </labels>
+</CustomLabels>

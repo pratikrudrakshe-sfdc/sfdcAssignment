@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Add Products" icon-name="standard:product">
+        <!--lightning-layout multiple-rows="true" vertical-align="end">
+            <lightning-layout-item size="12" small-device-size="10" medium-device-size="8" large-device-size="12" padding="around-small">
+                    <div class="slds-form-element">
+                            <div class="slds-form-element__control">
+                                    <lightning-input type="text" value={strSearchProdName} placeholder="Search Product"
+                                        label="Enter Product Name or Product Code" onchange={handleProductSearch} ></lightning-input>
+                            </div>
+                        </div> 
+            </lightning-layout-item>
+        </lightning-layout><br/-->
+        <template if:true={disableTable}>
+            <div style="height: 20rem;">
+                <lightning-datatable data={searchData} columns={columns} load-more-offset="10" onrowselection={handleRowSelection} 
+                key-field="id" enable-infinite-loading onloadmore={loadMoreData}>
+                </lightning-datatable>
+            </div>
+        </template>
+    </lightning-card>
+    <lightning-card>
+        <div class="slds-align_absolute-center">
+            <lightning-button variant="brand" disabled={disableBtn} onclick={getSelectedProducts} label="Add Products">
+            </lightning-button>
+        </div>
+    </lightning-card>
+</template>

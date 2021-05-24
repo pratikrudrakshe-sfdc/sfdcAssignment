@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Order Products" icon-name="standard:orders">
+        <template if:true={searchData}>
+            <lightning-datatable data={searchData} 
+            columns={columns} 
+            key-field="id" 
+            hide-checkbox-column="true">
+            </lightning-datatable>
+        </template>
+    </lightning-card>
+    <lightning-card>
+        <div class="slds-align_absolute-center">
+            <lightning-button variant="brand" onclick={confirmOrder} label="Submit Order">
+            </lightning-button>
+        </div>
+    </lightning-card>
+</template>
